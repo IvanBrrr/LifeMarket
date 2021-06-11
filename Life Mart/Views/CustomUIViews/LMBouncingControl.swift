@@ -24,7 +24,6 @@ class LMBouncingControl:UIControl {
             if oldValue == isHighlighted {
                 return
             }
-            print("set highlighted to \(isHighlighted)")
             if isHighlighted {
                 initialTransform = transform
                 UIView.animate(withDuration: UI.LM_CONTROL_ANIMATION_DURATION, delay: 0.0, options: [.curveEaseOut], animations: {
@@ -54,14 +53,12 @@ class LMBouncingControl:UIControl {
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesEnded(touches, with: event)
-        print("touches ended..")
         if ignore {
             return
         }
         if let touch = touches.first {
             let location = touch.location(in: self)
             if bounds.contains(location) {
-                print("sending actions")
                 sendActions(for: .touchUpInside)
             }
         }
@@ -70,7 +67,6 @@ class LMBouncingControl:UIControl {
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesCancelled(touches, with: event)
-        print("canceled touches")
         isHighlighted = false
     }
     
