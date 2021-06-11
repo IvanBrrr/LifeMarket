@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Life Mart/Pods-Life Mart-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/JMMaskTextField-Swift/JMMaskTextField_Swift.framework
+${BUILT_PRODUCTS_DIR}/Moya/Moya.framework

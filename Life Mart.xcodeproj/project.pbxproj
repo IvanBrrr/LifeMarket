@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		691AFBC05C04130370D66B74 /* Pods_Life_Mart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98BFD6394D9ADCB4565503C7 /* Pods_Life_Mart.framework */; };
+		7B2AC39926732EFE004FD65F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2AC39826732EFE004FD65F /* AppDelegate.swift */; };
+		7B2AC3A026732EFE004FD65F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B2AC39E26732EFE004FD65F /* Main.storyboard */; };
+		7B2AC3A226732F01004FD65F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B2AC3A126732F01004FD65F /* Assets.xcassets */; };
+		7B2AC3A526732F01004FD65F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B2AC3A326732F01004FD65F /* LaunchScreen.storyboard */; };
+		7B2AC3B4267330A0004FD65F /* LMBouncingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2AC3B3267330A0004FD65F /* LMBouncingControl.swift */; };
+		7B2AC3B726733190004FD65F /* LMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2AC3B626733190004FD65F /* LMButton.swift */; };
+		7B2AC3B92673319C004FD65F /* LMButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B2AC3B82673319C004FD65F /* LMButton.xib */; };
+		7B2AC3BB2673324F004FD65F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2AC3BA2673324F004FD65F /* Extensions.swift */; };
+		7B2AC3BE2673326F004FD65F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2AC3BD2673326F004FD65F /* Color.swift */; };
+		7B2AC3C4267333FB004FD65F /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2AC3C3267333FB004FD65F /* NetworkServices.swift */; };
+		7B2AC3C626733407004FD65F /* NetworkDataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2AC3C526733407004FD65F /* NetworkDataServices.swift */; };
+		7B2AC3CA267334F9004FD65F /* BannerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B2AC3C8267334F9004FD65F /* BannerVC.xib */; };
+		7B2AC3CC2673350C004FD65F /* BannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2AC3CB2673350C004FD65F /* BannerViewModel.swift */; };
+		7B2AC3CE2673351B004FD65F /* BannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2AC3CD2673351B004FD65F /* BannerVC.swift */; };
+		7B2AC3D62673437F004FD65F /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B2AC3D42673437F004FD65F /* SignInVC.xib */; };
+		7B2AC3D826734390004FD65F /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2AC3D726734390004FD65F /* SignInVC.swift */; };
+		7B2AC3DC267343A6004FD65F /* VerificationCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B2AC3DA267343A6004FD65F /* VerificationCodeVC.xib */; };
+		7B2AC3DE267343B4004FD65F /* VerificationCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2AC3DD267343B4004FD65F /* VerificationCodeVC.swift */; };
+		7B2AC3E0267343C0004FD65F /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2AC3DF267343C0004FD65F /* SignInViewModel.swift */; };
+		7B2AC3E2267343D1004FD65F /* VerificationCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2AC3E1267343D1004FD65F /* VerificationCodeViewModel.swift */; };
+		7B2AC3E4267365B8004FD65F /* LMHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2AC3E3267365B8004FD65F /* LMHelper.swift */; };
+		7B2AC3E726736ABE004FD65F /* CollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2AC3E626736ABE004FD65F /* CollectionViewExtensions.swift */; };
+		7B2AC3EE26736B73004FD65F /* VerificationTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2AC3EC26736B73004FD65F /* VerificationTypeCell.swift */; };
+		7B2AC3EF26736B73004FD65F /* VerificationTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B2AC3ED26736B73004FD65F /* VerificationTypeCell.xib */; };
+		7B2AC3F126736F32004FD65F /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2AC3F026736F32004FD65F /* ViewControllerExtensions.swift */; };
+		7B2AC3F426738C41004FD65F /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2AC3F326738C41004FD65F /* AuthenticationModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7B2AC39526732EFE004FD65F /* Life Mart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Life Mart.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B2AC39826732EFE004FD65F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7B2AC39F26732EFE004FD65F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B2AC3A126732F01004FD65F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B2AC3A426732F01004FD65F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B2AC3A626732F01004FD65F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B2AC3B3267330A0004FD65F /* LMBouncingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMBouncingControl.swift; sourceTree = "<group>"; };
+		7B2AC3B626733190004FD65F /* LMButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMButton.swift; sourceTree = "<group>"; };
+		7B2AC3B82673319C004FD65F /* LMButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LMButton.xib; sourceTree = "<group>"; };
+		7B2AC3BA2673324F004FD65F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7B2AC3BD2673326F004FD65F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		7B2AC3C3267333FB004FD65F /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		7B2AC3C526733407004FD65F /* NetworkDataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataServices.swift; sourceTree = "<group>"; };
+		7B2AC3C8267334F9004FD65F /* BannerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerVC.xib; sourceTree = "<group>"; };
+		7B2AC3CB2673350C004FD65F /* BannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewModel.swift; sourceTree = "<group>"; };
+		7B2AC3CD2673351B004FD65F /* BannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerVC.swift; sourceTree = "<group>"; };
+		7B2AC3D42673437F004FD65F /* SignInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInVC.xib; sourceTree = "<group>"; };
+		7B2AC3D726734390004FD65F /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		7B2AC3DA267343A6004FD65F /* VerificationCodeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerificationCodeVC.xib; sourceTree = "<group>"; };
+		7B2AC3DD267343B4004FD65F /* VerificationCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCodeVC.swift; sourceTree = "<group>"; };
+		7B2AC3DF267343C0004FD65F /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		7B2AC3E1267343D1004FD65F /* VerificationCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCodeViewModel.swift; sourceTree = "<group>"; };
+		7B2AC3E3267365B8004FD65F /* LMHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMHelper.swift; sourceTree = "<group>"; };
+		7B2AC3E626736ABE004FD65F /* CollectionViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewExtensions.swift; sourceTree = "<group>"; };
+		7B2AC3EC26736B73004FD65F /* VerificationTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationTypeCell.swift; sourceTree = "<group>"; };
+		7B2AC3ED26736B73004FD65F /* VerificationTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerificationTypeCell.xib; sourceTree = "<group>"; };
+		7B2AC3F026736F32004FD65F /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		7B2AC3F326738C41004FD65F /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
+		8D5D6E3859358A3FACC2DFA1 /* Pods-Life Mart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Life Mart.release.xcconfig"; path = "Target Support Files/Pods-Life Mart/Pods-Life Mart.release.xcconfig"; sourceTree = "<group>"; };
+		98BFD6394D9ADCB4565503C7 /* Pods_Life_Mart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Life_Mart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A48F712E2A0C6DC58E755F4A /* Pods-Life Mart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Life Mart.debug.xcconfig"; path = "Target Support Files/Pods-Life Mart/Pods-Life Mart.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B2AC39226732EFE004FD65F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				691AFBC05C04130370D66B74 /* Pods_Life_Mart.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02D779B26C30DF5EFECE8BDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98BFD6394D9ADCB4565503C7 /* Pods_Life_Mart.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25ADC35495BD3A2C547BE466 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A48F712E2A0C6DC58E755F4A /* Pods-Life Mart.debug.xcconfig */,
+				8D5D6E3859358A3FACC2DFA1 /* Pods-Life Mart.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7B2AC38C26732EFE004FD65F = {
+			isa = PBXGroup;
+			children = (
+				7B2AC39726732EFE004FD65F /* Life Mart */,
+				7B2AC39626732EFE004FD65F /* Products */,
+				25ADC35495BD3A2C547BE466 /* Pods */,
+				02D779B26C30DF5EFECE8BDC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7B2AC39626732EFE004FD65F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AC39526732EFE004FD65F /* Life Mart.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B2AC39726732EFE004FD65F /* Life Mart */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AC39826732EFE004FD65F /* AppDelegate.swift */,
+				7B2AC3AC26733006004FD65F /* Services */,
+				7B2AC3AE26733012004FD65F /* Views */,
+				7B2AC3AF2673301F004FD65F /* Models */,
+				7B2AC3B02673302E004FD65F /* ViewModels */,
+				7B2AC3B126733051004FD65F /* ViewControllers */,
+				7B2AC39E26732EFE004FD65F /* Main.storyboard */,
+				7B2AC3A126732F01004FD65F /* Assets.xcassets */,
+				7B2AC3A326732F01004FD65F /* LaunchScreen.storyboard */,
+				7B2AC3A626732F01004FD65F /* Info.plist */,
+			);
+			path = "Life Mart";
+			sourceTree = "<group>";
+		};
+		7B2AC3AC26733006004FD65F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AC3E526736A34004FD65F /* Extensions */,
+				7B2AC3C2267333EB004FD65F /* NetworkService */,
+				7B2AC3BC26733261004FD65F /* Helpers */,
+				7B2AC3BA2673324F004FD65F /* Extensions.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7B2AC3AE26733012004FD65F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AC3CF26734282004FD65F /* Authentication */,
+				7B2AC3BF267333CF004FD65F /* Banner */,
+				7B2AC3E826736B32004FD65F /* Custom Components */,
+				7B2AC3B226733072004FD65F /* CustomUIViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7B2AC3AF2673301F004FD65F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AC3F226738C37004FD65F /* Authentication */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7B2AC3B02673302E004FD65F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AC3D026734288004FD65F /* Authentication */,
+				7B2AC3C0267333DA004FD65F /* Banner */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7B2AC3B126733051004FD65F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AC3D12673428E004FD65F /* Authentication */,
+				7B2AC3C1267333DD004FD65F /* Banner */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7B2AC3B226733072004FD65F /* CustomUIViews */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AC3B526733145004FD65F /* LOButton */,
+				7B2AC3B3267330A0004FD65F /* LMBouncingControl.swift */,
+			);
+			path = CustomUIViews;
+			sourceTree = "<group>";
+		};
+		7B2AC3B526733145004FD65F /* LOButton */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AC3B626733190004FD65F /* LMButton.swift */,
+				7B2AC3B82673319C004FD65F /* LMButton.xib */,
+			);
+			path = LOButton;
+			sourceTree = "<group>";
+		};
+		7B2AC3BC26733261004FD65F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AC3BD2673326F004FD65F /* Color.swift */,
+				7B2AC3E3267365B8004FD65F /* LMHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7B2AC3BF267333CF004FD65F /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AC3C8267334F9004FD65F /* BannerVC.xib */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		7B2AC3C0267333DA004FD65F /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AC3CB2673350C004FD65F /* BannerViewModel.swift */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		7B2AC3C1267333DD004FD65F /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AC3CD2673351B004FD65F /* BannerVC.swift */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		7B2AC3C2267333EB004FD65F /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AC3C3267333FB004FD65F /* NetworkServices.swift */,
+				7B2AC3C526733407004FD65F /* NetworkDataServices.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		7B2AC3CF26734282004FD65F /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AC3D42673437F004FD65F /* SignInVC.xib */,
+				7B2AC3DA267343A6004FD65F /* VerificationCodeVC.xib */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		7B2AC3D026734288004FD65F /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AC3DF267343C0004FD65F /* SignInViewModel.swift */,
+				7B2AC3E1267343D1004FD65F /* VerificationCodeViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		7B2AC3D12673428E004FD65F /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AC3D726734390004FD65F /* SignInVC.swift */,
+				7B2AC3DD267343B4004FD65F /* VerificationCodeVC.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		7B2AC3E526736A34004FD65F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AC3E626736ABE004FD65F /* CollectionViewExtensions.swift */,
+				7B2AC3F026736F32004FD65F /* ViewControllerExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7B2AC3E826736B32004FD65F /* Custom Components */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AC3E926736B35004FD65F /* Cells */,
+			);
+			path = "Custom Components";
+			sourceTree = "<group>";
+		};
+		7B2AC3E926736B35004FD65F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AC3EA26736B44004FD65F /* Collection */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7B2AC3EA26736B44004FD65F /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AC3EB26736B4D004FD65F /* VerificationTypeCell */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		7B2AC3EB26736B4D004FD65F /* VerificationTypeCell */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AC3EC26736B73004FD65F /* VerificationTypeCell.swift */,
+				7B2AC3ED26736B73004FD65F /* VerificationTypeCell.xib */,
+			);
+			path = VerificationTypeCell;
+			sourceTree = "<group>";
+		};
+		7B2AC3F226738C37004FD65F /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				7B2AC3F326738C41004FD65F /* AuthenticationModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B2AC39426732EFE004FD65F /* Life Mart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B2AC3A926732F01004FD65F /* Build configuration list for PBXNativeTarget "Life Mart" */;
+			buildPhases = (
+				5535244ADB25606D91C5E402 /* [CP] Check Pods Manifest.lock */,
+				7B2AC39126732EFE004FD65F /* Sources */,
+				7B2AC39226732EFE004FD65F /* Frameworks */,
+				7B2AC39326732EFE004FD65F /* Resources */,
+				0790F66A71CB66D4467624E9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Life Mart";
+			productName = "Life Mart";
+			productReference = 7B2AC39526732EFE004FD65F /* Life Mart.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B2AC38D26732EFE004FD65F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					7B2AC39426732EFE004FD65F = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 7B2AC39026732EFE004FD65F /* Build configuration list for PBXProject "Life Mart" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B2AC38C26732EFE004FD65F;
+			productRefGroup = 7B2AC39626732EFE004FD65F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B2AC39426732EFE004FD65F /* Life Mart */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B2AC39326732EFE004FD65F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B2AC3D62673437F004FD65F /* SignInVC.xib in Resources */,
+				7B2AC3CA267334F9004FD65F /* BannerVC.xib in Resources */,
+				7B2AC3DC267343A6004FD65F /* VerificationCodeVC.xib in Resources */,
+				7B2AC3A526732F01004FD65F /* LaunchScreen.storyboard in Resources */,
+				7B2AC3A226732F01004FD65F /* Assets.xcassets in Resources */,
+				7B2AC3B92673319C004FD65F /* LMButton.xib in Resources */,
+				7B2AC3EF26736B73004FD65F /* VerificationTypeCell.xib in Resources */,
+				7B2AC3A026732EFE004FD65F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0790F66A71CB66D4467624E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Life Mart/Pods-Life Mart-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Life Mart/Pods-Life Mart-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Life Mart/Pods-Life Mart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5535244ADB25606D91C5E402 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Life Mart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B2AC39126732EFE004FD65F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B2AC3CE2673351B004FD65F /* BannerVC.swift in Sources */,
+				7B2AC3BB2673324F004FD65F /* Extensions.swift in Sources */,
+				7B2AC3E4267365B8004FD65F /* LMHelper.swift in Sources */,
+				7B2AC3E726736ABE004FD65F /* CollectionViewExtensions.swift in Sources */,
+				7B2AC3B4267330A0004FD65F /* LMBouncingControl.swift in Sources */,
+				7B2AC3CC2673350C004FD65F /* BannerViewModel.swift in Sources */,
+				7B2AC3D826734390004FD65F /* SignInVC.swift in Sources */,
+				7B2AC3E2267343D1004FD65F /* VerificationCodeViewModel.swift in Sources */,
+				7B2AC39926732EFE004FD65F /* AppDelegate.swift in Sources */,
+				7B2AC3F426738C41004FD65F /* AuthenticationModel.swift in Sources */,
+				7B2AC3B726733190004FD65F /* LMButton.swift in Sources */,
+				7B2AC3EE26736B73004FD65F /* VerificationTypeCell.swift in Sources */,
+				7B2AC3C626733407004FD65F /* NetworkDataServices.swift in Sources */,
+				7B2AC3E0267343C0004FD65F /* SignInViewModel.swift in Sources */,
+				7B2AC3C4267333FB004FD65F /* NetworkServices.swift in Sources */,
+				7B2AC3BE2673326F004FD65F /* Color.swift in Sources */,
+				7B2AC3F126736F32004FD65F /* ViewControllerExtensions.swift in Sources */,
+				7B2AC3DE267343B4004FD65F /* VerificationCodeVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7B2AC39E26732EFE004FD65F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B2AC39F26732EFE004FD65F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7B2AC3A326732F01004FD65F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B2AC3A426732F01004FD65F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B2AC3A726732F01004FD65F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B2AC3A826732F01004FD65F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B2AC3AA26732F01004FD65F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A48F712E2A0C6DC58E755F4A /* Pods-Life Mart.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K7NSYB8B32;
+				INFOPLIST_FILE = "Life Mart/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mit.Life-Mart";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7B2AC3AB26732F01004FD65F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D5D6E3859358A3FACC2DFA1 /* Pods-Life Mart.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K7NSYB8B32;
+				INFOPLIST_FILE = "Life Mart/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mit.Life-Mart";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B2AC39026732EFE004FD65F /* Build configuration list for PBXProject "Life Mart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B2AC3A726732F01004FD65F /* Debug */,
+				7B2AC3A826732F01004FD65F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B2AC3A926732F01004FD65F /* Build configuration list for PBXNativeTarget "Life Mart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B2AC3AA26732F01004FD65F /* Debug */,
+				7B2AC3AB26732F01004FD65F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B2AC38D26732EFE004FD65F /* Project object */;
+}

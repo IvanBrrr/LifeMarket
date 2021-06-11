@@ -1,0 +1,27 @@
+PODS:
+  - Alamofire (5.4.3)
+  - JMMaskTextField-Swift (0.1.3)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - JMMaskTextField-Swift
+  - Moya (~> 14.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - JMMaskTextField-Swift
+    - Moya
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  JMMaskTextField-Swift: 16aa552605b121285e6c2f0817ab31cea5f4704b
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+
+PODFILE CHECKSUM: 28524cc9b95ad363b1d53db877ab3f77db7a9cd1
+
+COCOAPODS: 1.10.0
