@@ -22,14 +22,16 @@ enum ViewModelState {
 typealias Params = [String:Any]
 
 enum NetworkServices {
-    case postRegister(phone:String)
+    case getByShortName(isOpenNow:Bool,shortName:String,sortBy:String)
+    case getByCompanyId(companyId:Int)
+    case getCompany(isOpenNow:Bool)
 }
 
 extension NetworkServices: TargetType {
     static let provider = MoyaProvider<NetworkServices>(plugins: [NetworkLoggerPlugin()])
     
     var baseURL: URL {
-        let baseUrl = "https://dev-su.lifemart.ru/api/"// RELEASE
+        let baseUrl = "https://vet-find.herokuapp.com/"// RELEASE
         guard let url = URL(string: baseUrl) else {
             fatalError("URL cannot be configured.")
         }
@@ -39,17 +41,16 @@ extension NetworkServices: TargetType {
     var path: String {
         switch self {
    
-            
-        //MARK:- Authentication
-        case .postRegister: return "user/register"
-              
+        case .getByShortName: return "find/by-short-name"
+        case .getByCompanyId: return "find/by-company-id"
+        case .getCompany: return "company"
+
         }
     }
     
     var method: Moya.Method {
         switch self {
-        //MARK:- Authentication
-        case .postRegister: return .post
+        case .getByShortName,.getByCompanyId,.getCompany: return .get
             
      
         }
@@ -61,8 +62,10 @@ extension NetworkServices: TargetType {
     
     var task: Task {
         switch self {
-        //MARK:- Authentication
-        case .postRegister(let phone): return .requestParameters(parameters: ["phone":phone], encoding: JSONEncoding.default)
+        case .getByShortName(let isOpenNow, let shortName,let sortBy): return .requestParameters(parameters: ["isOpenNow":isOpenNow,"shortName":shortName,"sortBy":sortBy], encoding: URLEncoding.queryString)
+        case .getByCompanyId(let companyId): return .requestParameters(parameters: ["companyId":companyId], encoding: URLEncoding.queryString)
+        case .getCompany(let isOpenNow): return .requestParameters(parameters: ["isOpenNow":isOpenNow], encoding: URLEncoding.queryString)
+
         }
     }
     var headers: [String : String]? {

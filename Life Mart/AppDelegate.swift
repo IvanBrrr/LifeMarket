@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import YandexMapsMobile
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,7 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        self.window?.rootViewController = SignInVC(viewModel: SignInViewModel())
+        YMKMapKit.setApiKey("c6fce5d7-b16e-4be0-a755-f37fa509991e")
+
+        self.window?.rootViewController = HomeVC(viewModel: HomeViewModel())
         self.window?.makeKeyAndVisible()
         
         return true

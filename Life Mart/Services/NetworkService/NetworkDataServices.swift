@@ -7,23 +7,34 @@
 
 import Foundation
 import Moya
+import RxSwift
+
 
 class NetworkDataServices {
     private let provider = MoyaProvider<NetworkServices>(plugins: [NetworkLoggerPlugin()])
-
-    func requestRegister(with phone:String, completion: @escaping (RegisterResponseRootClass?, Error?) -> Void) {
-        provider.request(.postRegister(phone: phone)){ result in
-            switch result {
-            case .success(let response):
-                do {
-                    let data = try JSONDecoder().decode(RegisterResponseRootClass.self, from: response.data)
-                        completion(data, nil)
-                } catch (let error) {
-                    completion(nil, error)
-                }
-            case .failure(let error):
-                completion(nil, error)
-            }
-        }
+    private let disposeBag = DisposeBag()
+    
+    func requesForSearch(with isOpenNow:Bool,shortName:String,sortBy:String) -> Single<[SearchModelRootClass]>  {
+        return provider.rx
+            .request(.getByShortName(isOpenNow: isOpenNow, shortName: shortName, sortBy: sortBy))
+            .catchMyError(ErrorHandlerModelRootClass.self)
+            .filterSuccessfulStatusAndRedirectCodes()
+            .map([SearchModelRootClass].self)
     }
+    func requesProduct(with companyId:Int) -> Single<[SearchModelRootClass]>  {
+        return provider.rx
+            .request(.getByCompanyId(companyId: companyId))
+            .catchMyError(ErrorHandlerModelRootClass.self)
+            .filterSuccessfulStatusAndRedirectCodes()
+            .map([SearchModelRootClass].self)
+    }
+    func requestCompant(with isOpenNow:Bool) -> Single<[SearchModelCompany]>  {
+        return provider.rx
+            .request(.getCompany(isOpenNow: isOpenNow))
+            .catchMyError(ErrorHandlerModelRootClass.self)
+            .filterSuccessfulStatusAndRedirectCodes()
+            .map([SearchModelCompany].self)
+    }
+    
+    
 }

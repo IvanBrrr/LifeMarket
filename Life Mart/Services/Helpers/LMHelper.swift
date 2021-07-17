@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+typealias VoidBlock = () -> ()
+
 class LMHelper {
     
     static func getToolbarWithSelector(_ selector: Selector, target: Any) -> UIToolbar {

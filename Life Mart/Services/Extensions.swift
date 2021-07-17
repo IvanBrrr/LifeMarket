@@ -44,4 +44,16 @@ extension UIView{
     func roundedCorners(radius:CGFloat = 8) {
         self.layer.cornerRadius = radius
     }
+    func drawShadow(color: CGColor = UIColor.black.cgColor, forOpacity opacity: Float, forOffset offset: CGSize, radius: CGFloat = 8) {
+        layer.masksToBounds = false
+        layer.shadowColor = color
+        layer.shadowOpacity = opacity
+        layer.shadowOffset = offset
+        layer.shadowRadius = radius
+    }
+    
+    func drawBorder(color:UIColor = Color.main){
+        self.layer.borderWidth = 1
+        self.layer.borderColor = color.cgColor
+    }
 }
